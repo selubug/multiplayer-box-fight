@@ -1,180 +1,167 @@
-# Box-Fight-Fortnite-Map
-Box fight maps peaking at over 35k concurrent players, featured by large youtuber ( find other maps in README )
-link to map https://fortnite.gg/island/8760-5124-3263
-link to others https://fortnite.gg/creator/scarj
-YOUTUBE video feature https://www.youtube.com/watch?v=JLLwoqYCG6A&t=47s
+# Box Fight — Unreal Engine / UEFN Multiplayer Project
 
+A production multiplayer experience developed with **Unreal Editor for Fortnite (UEFN)** and **Verse**, built around fast-paced competitive multiplayer gameplay and reusable real-time game systems.
 
- UEFN Historical Powers Battle Royale
+The project became one of my most successful published multiplayer experiences, reaching:
 
-A multiplayer Fortnite experience built in **Unreal Editor for Fortnite (UEFN)** using **Verse**.
+* **35,000+ peak concurrent players**
+* Featured by a major YouTube creator
+* Released publicly through Fortnite / UEFN
+* Built as part of my larger portfolio of shipped Unreal Engine multiplayer projects
 
-Each player is assigned a unique historical figure or themed character with a custom ability, loadout, class, UI identity, and gameplay mechanic. The project combines PvP combat with character-specific powers, custom HUD elements, cinematics, movement effects, teleportation, visual effects, and scripted gameplay systems.
+🎮 [View Published Game](https://fortnite.gg/island/8760-5124-3263)
+🎥 [YouTube Feature](https://www.youtube.com/watch?v=JLLwoqYCG6A&t=47s)
+🕹️ [More Published Projects](https://fortnite.gg/creator/scarj)
 
-## Gameplay Concept
+---
 
-At the start of the match, players are randomly assigned one of multiple unique characters.
+## Project Overview
 
-Each character has a different gameplay mechanic or ability, such as:
+This project was built as a live multiplayer experience using **Unreal Engine technology through UEFN**, with custom gameplay logic implemented in Verse.
 
-- Special weapons
-- Custom classes
-- Damage effects
-- Teleportation
-- Healing
-- Shield manipulation
-- Movement abilities
-- Cinematic abilities
-- Visual effects
-- Team changes
-- Remote-triggered powers
+The project required coordinating real-time multiplayer systems including player state, teams, classes, loadouts, teleportation, timers, UI, gameplay devices, arena state, and event-driven interactions.
 
-## Key Features
+Rather than relying entirely on editor configuration, custom Verse systems were used to control gameplay behavior and connect Unreal/UEFN devices into reusable systems.
 
-- 20+ unique playable characters
-- Random character assignment
-- Character-specific abilities
-- Custom player HUD system
-- Custom textures and UI cards
-- Player elimination tracking
-- Spectator HUD support
-- Team and class management
-- Custom loadouts
-- Character-specific item granters
-- Healing and shield mechanics
-- Teleportation abilities
-- Damage manipulation
-- Movement modifiers
-- Cinematic sequences
-- Visual effects
-- Audio effects
-- Emote-triggered abilities
-- Remote-controlled abilities
-- Player state tracking
-- Dynamic barriers and arena setup
+---
+
+## Multiplayer Systems
+
+### Player State
+
+The gameplay controller maintains player-specific state using Verse data structures.
+
+Examples include tracking:
+
+* Active players
+* Player status
+* Team assignments
+* UI state
+* Gameplay state
+* Spectating state
+
+This allows gameplay events to affect individual players without relying entirely on global game state.
+
+### Team & Class Management
+
+Custom logic integrates with UEFN's team and class systems to dynamically configure players during gameplay.
+
+This includes:
+
+* Team selection
+* Class assignment
+* Player-specific loadouts
+* State transitions
+* Match initialization
+
+### Inventory & Loadouts
+
+The project integrates item-granting and inventory systems to configure player equipment based on gameplay state.
+
+Gameplay logic can dynamically grant or remove items rather than relying on a completely static loadout configuration.
+
+### Event-Driven Gameplay
+
+The project uses an event-driven architecture to respond to player actions and game events.
+
+Verse systems coordinate devices such as:
+
+* Item granters
+* Team and class selectors
+* Teleporters
+* Timers
+* Barriers
+* Damage modifiers
+* Movement modifiers
+* HUD systems
+* Audio devices
+* Cinematic sequences
+* Mutator zones
+* Visual effects
+* Gameplay triggers
+
+---
+
+## Technical Concepts
+
+This project demonstrates experience with:
+
+* Multiplayer programming
+* Event-driven architecture
+* Player state management
+* Real-time game logic
+* Maps and arrays
+* Object-oriented programming concepts
+* Gameplay event subscriptions
+* Team and class systems
+* Device abstraction
+* UI integration
+* Asynchronous gameplay logic
+* Debugging multiplayer systems
+* Production game development
+
+---
 
 ## Technologies
 
-- **Unreal Editor for Fortnite**
-- **Verse**
-- **Unreal Engine**
-- **Fortnite Creative Devices**
-- **Fortnite UI API**
+**Project Technologies**
 
-## Verse Systems
+* Unreal Engine / UEFN
+* Verse
+* Unreal gameplay systems
+* Fortnite Creative devices
+* UEFN UI and gameplay APIs
 
-### Random Character Assignment
+### C++ / Unreal Engine Background
 
-At the beginning of a match, the game randomly assigns each player a character from the available character pool.
+This repository contains the **Verse gameplay source** for the UEFN project.
 
-Once selected, that character is removed from the available array so another player cannot receive the same assignment.
+My broader Unreal Engine development experience includes **C++, Verse, and Blueprints**, which I have used across more than **15 shipped multiplayer products**.
 
-The system then configures the player's:
+Those products have collectively reached **15M+ player sessions**, with five individual projects exceeding one million sessions and projects reaching more than **35,000 concurrent users**.
 
-- HUD
-- Team
-- Class
-- Weapons
-- Items
-- Character-specific state
+---
 
-### Player State Management
+## Production Scale
 
-The Verse controller tracks several pieces of information for every player, including:
+| Metric                  |                 Result |
+| ----------------------- | ---------------------: |
+| Peak Concurrent Players |                35,000+ |
+| Environment             | Production multiplayer |
+| Engine                  |   Unreal Engine / UEFN |
+| Gameplay Programming    |                  Verse |
+| Published               |               Fortnite |
 
-- Assigned character
-- Alive/dead status
-- HUD selection
-- Spectator state
-- Character abilities
+The scale of the project required systems that could operate reliably with large numbers of active players while handling state changes and multiplayer events in real time.
 
-Player-specific information is stored using Verse maps.
+---
 
-### Character Abilities
+## My Contributions
 
-Abilities are implemented using a combination of Verse and Fortnite Creative devices.
+My work included:
 
-Depending on the character, the system can interact with:
+* Multiplayer gameplay programming
+* Verse development
+* Gameplay systems architecture
+* Player state management
+* Team and class logic
+* Inventory and loadout systems
+* UI integration
+* Event-driven game logic
+* Device integration
+* Multiplayer debugging
+* UEFN implementation
+* Testing and live iteration
 
-- `item_granter_device`
-- `class_and_team_selector_device`
-- `teleporter_device`
-- `movement_modulator_device`
-- `damage_amplifier_powerup_device`
-- `visual_effect_powerup_device`
-- `cinematic_sequence_device`
-- `signal_remote_manager_device`
-- `automated_turret_device`
-- `explosive_device`
-- `mutator_zone_device`
-- `audio_player_device`
+This project was developed as part of my work building and maintaining commercial multiplayer experiences within the Unreal Engine ecosystem.
 
-This lets each character behave differently without requiring a separate Fortnite project for every ability.
+---
 
-## Custom UI
+## Source Code
 
-The project includes a custom HUD system built with the Verse UI API.
+A selected portion of the project's Verse gameplay implementation is available in this repository:
 
-Each character can display unique textures and information to the player.
+[`Box.verse`](./Box.verse)
 
-The UI system also supports displaying information while spectating another player.
+The complete published experience also includes Unreal/UEFN level configuration, assets, device configuration, UI, and other editor-side content that cannot be represented by the Verse source file alone.
 
-## Example Ability Systems
-
-### Healing
-
-Certain characters can regenerate health and shields over time through custom Verse loops.
-
-### Teleportation
-
-Some abilities temporarily teleport players to another location and return them after a timer.
-
-### Area Effects
-
-Abilities can affect nearby players through:
-
-- Audio
-- Damage
-- Stasis
-- Movement changes
-- Explosions
-- Visual effects
-
-
-
-The main gameplay controller can be found in:
-
-Verse/HistoricalPowers.verse
-
-The Verse code handles character assignment, player state, eliminations, abilities, HUDs, teams, classes, and Creative device integration.
-
-Technical Highlights
-
-One of the main challenges of the project was creating many completely different character abilities inside a single multiplayer system.
-
-Instead of building each character as an isolated mechanic, the game uses a central Verse controller that keeps track of which character belongs to each player and activates the appropriate systems when gameplay events occur.
-
-The project demonstrates experience with:
-
-Event-driven programming
-Multiplayer game logic
-Player state management
-Verse maps and arrays
-Randomized gameplay systems
-UI programming
-Gameplay device integration
-Asynchronous Verse functions
-Event subscriptions
-Custom ability systems
-What I Worked On
-Verse gameplay programming
-Character ability design
-Multiplayer systems
-Custom UI
-Player state tracking
-Elimination logic
-Character assignment
-Team and class systems
-Device integration
-Gameplay balancing
-UEFN implementation
