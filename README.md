@@ -13,6 +13,9 @@ The project became one of my most successful published multiplayer experiences, 
 🎥 [YouTube Feature](https://www.youtube.com/watch?v=JLLwoqYCG6A&t=47s)
 🕹️ [More Published Projects](https://fortnite.gg/creator/scarj)
 
+Collab Maps With Other Studios -
+Caseoh Escape Map-
+https://youtu.be/K9qFuu0uIM8?is=6FG7uIvAQ01HBtbR
 ---
 
 ## Project Overview
