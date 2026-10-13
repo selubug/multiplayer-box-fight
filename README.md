@@ -1,7 +1,7 @@
 # Box Fight — Unreal Engine / UEFN Multiplayer Project
 
 A production multiplayer experience developed with **Unreal Editor for Fortnite (UEFN)** and **Verse**, built around fast-paced competitive multiplayer gameplay and reusable real-time game systems.
-
+* No Ai assisted code was used in development.
 The project became one of my most successful published multiplayer experiences, reaching:
 
 * **35,000+ peak concurrent players**
